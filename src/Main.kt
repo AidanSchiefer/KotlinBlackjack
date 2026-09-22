@@ -38,6 +38,7 @@ public class Blackjack(){
         cards("Ace1 of Clubs", 1), cards("One of Clubs", 1), cards("Two of Clubs", 2), cards("Three of Clubs", 3), cards("Four of Clubs", 4), cards("Five of Clubs", 5), cards("Six of Clubs", 6), cards("Seven of Clubs", 7),
         cards("Eight of Clubs", 8), cards("Nine of Clubs", 9), cards("Ten of Clubs", 10), cards("Jack of Clubs", 10), cards("Queen of Clubs", 10), cards("King of Clubs", 10), cards("Ace2 of Clubs", 11))
 
+    // Changeable list that contains the shuffled deck
     private var shuffledDeck = mutableListOf<cards>()
 
     // Getter method for the regular deck. (Primarily used for debugging)
@@ -77,8 +78,6 @@ public class Blackjack(){
             println("The dealer is dealt a second card")
             card_value = randomShuffledIndex.value
         }
-
-
 
         // Remove matching card from shuffled deck
         var i = 0
